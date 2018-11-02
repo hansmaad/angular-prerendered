@@ -20,7 +20,7 @@ const routes: Routes = [
     HomeComponent
   ],
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
     BrowserModule.withServerTransition({ appId: 'serverApp' })
   ],
   providers: [],
